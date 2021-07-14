@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="scss/estilomobil.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <script src="js/js.js"></script>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="icon" href="imagenes/iconos/iconoNav.png">
+        <meta name="description" content="Contactenos para mayor informacion">
+        <meta name="keywords" content="contacto, ventas, consultas">
+        <title>El Jaguar: Contacto</title>
+      </head>
+      <body>
+        <div id="menu_principal">
+            <div id="menu_Principal_Titulo">Distribuidora El Jaguar --- El Casique</div>
+            <header>
+              <div id="menu_Principal_Banner"></div>
+                <nav>
+                    <div class="toggle">
+                        <i class="fas fa-bars" onclick="mobile()"></i>
+                    </div>
+                        <ul id="idMobile">
+                            <li><a href="index.html"><img src="imagenes/iconos/1x/sharp_home_black_24dp.png" class="iconos">  Inicio</a></li>
+                            <li><a href="productos.html"><img src="imagenes/iconos/1x/sharp_store_black_24dp.png" class="iconos">Productos</a></li>
+                            <li><a href="locales.html"><img src="imagenes/iconos/1x/sharp_location_on_black_24dp.png" class="iconos">Locales</a></li>
+                            <li><a href="galeria.html"><img src="imagenes/iconos/1x/sharp_photo_library_black_24dp.png" class="iconos">Galeria</a></li>
+                            <li><a href="contacto.html"><img src="imagenes/iconos/1x/sharp_contact_support_black_24dp.png" class="iconos">Contactenos</a></li>
+                            <li><a href="login.html"><img src="imagenes/iconos/1x/sharp_login_black_24dp.png" class="iconos">Intranet</a></li>
+                        </ul>
+                </nav>
+            </header>
+          </div>
+        <br><div class="titH2">Formulario de contacto:</div>
+        <div class="formulario_contacto">
+            <input Type="Text" name="Nombre" placeholder="Escribe tu Nombre" size="27" maxlength="50" required>
+            <input Type="Text" name="Apellido" placeholder="Escribe tu Apellido" size="27" maxlength="50" required>
+            <br><br>
+            <input Type="email" name="mail" placeholder="Escribe tu E-mail" size="60" maxlength="50" required>
+            <br><br>
+            <input type="number" name="telefono" placeholder="Escribe tu Telefono" size="20" minlength="9" maxlength="9" required>
+            <label for="tipocliente">Tipo de Contacto</label>
+            <select name="tipocliente" id="">
+                <option value="Distribucion">Mayorista</option>
+                <option value="Forrajeria">Forrajeria</option>
+                <option value="Negocio-Almacen">Negocio & Almacen</option>
+                <option value="Particular">Cliente Particular</option>
+            </select>
+            <br><br>
+            <label>Seleccionar Rango horario preferido para que nos comuniquemos:</label><br>
+            <input type="checkbox" id="cbox1" value="mañana">08:00 a 11:00</label><br>
+            <input type="checkbox" id="cbox2" value="tarde">16:00 a 20:00</label><br>
+            <input type="checkbox" id="cbox4" value="indistinto">Horario Indistinto</label><br><br>
+            <label for="observaciones">Comentarios:</label><br>
+            <textarea name="observaciones" rows="10" cols="60" placeholder="ingrese sus comentarios" maxlength="250"></textarea>
+            <br>
+            <br>
+            <input type="submit" value="Enviar Solicitud de Contacto">
+
+       </div>
+    <hr>
+    <footer>
+        <main class="footer_titulo">
+            <div>Lo invitamos a ver nuestros medios de comunicacion</div>
+            <div><a href="https://www.facebook.com/146132475939016/posts/702635990288659/" target="_blank">👉 Promociones Vigentes 👈</a></div>
+        </main>
+        <div id="fb-root"></div>
+        <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+        fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+        <!-- Your share button code -->
+        <div class="fb-share-button" 
+        data-href="https://www.produgassys.ddns.net:90/index.html" 
+        data-layout="button_count">
+        </div>
+        <p class="footer_desarrollador">© Desarrollado por Trevisan Jonatan Ivan</p>
+    </footer>    
+</body>
+</html>

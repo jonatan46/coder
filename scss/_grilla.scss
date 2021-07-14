@@ -1,0 +1,50 @@
+
+#grilla{
+    width: 98%;
+    max-width: 98%;
+    margin: 3px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "header header header"
+    "primera primera aside"
+    "segunda segunda segunda"
+    "footer footer footer";
+    gap: 1px;
+    justify-items: center;
+}
+#menu_principal{
+    width: 100%;
+    grid-area: header;
+    height: 250px;  
+    background: $bgfondo;
+    background-image: url("fondo/004.png");
+    background-repeat: no-repeat;
+}   
+#main {
+    grid-area: primera;
+}
+.imgfloat{
+    width: 25%;
+    border-radius: 35% 5%;
+    float: left;
+    padding: 15px;
+}
+section#section {
+    grid-area: segunda;
+    width: 100%;
+}
+aside#aside  {
+    grid-area: aside;
+    width: 100%;
+    background-image: linear-gradient(rgb(255, 255, 255),blue,black);
+}
+footer{
+    grid-area: footer;
+    width: 100%;
+    background: #1d4372;
+    color: azure;
+    border-color:rgb(255, 255, 255) 2px solid;
+    text-align: center;
+}

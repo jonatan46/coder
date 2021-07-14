@@ -1,0 +1,21 @@
+.galeria{
+    background-color: $bdgrisoscuro;
+    padding: 1%;
+    .galeriaImg{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+}
+.galeriahijo{
+    border: 1px solid $bdgrisoscuro;
+}
+.tituloGaleria{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    color:$bdblanco;
+    padding: 20px;
+}

@@ -1,0 +1,30 @@
+.localesUbic{
+    background-color: $bdgrisoscuro;
+    padding: 1%;
+    .localesTitulos{
+        font-family: $fontluci;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-align: center;
+        color: $bdblanco;
+    }
+    .localesMaps{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        .local{
+            width: 570px;
+            height: 490px;
+            color: $bdsmock;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            border: $bdgris double 4px;
+            
+        }
+        .local:hover{
+            border: $bdblanco double 3px;
+        }
+    }
+}

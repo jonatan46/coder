@@ -1,0 +1,18 @@
+.productos{
+    background-color: $bdgris;
+    padding: 1%;
+    .productos_galeriaTitulo{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        text-align: center;
+        color: $bdblanco;
+    }
+    .productos_carrucelImg{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: space-around;
+        justify-content: center;
+    }
+}

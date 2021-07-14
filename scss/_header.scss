@@ -1,0 +1,71 @@
+#menu_principal{
+    height: 250px;  
+    background: $bgfondo;
+    background-image: url("fondo/004.png");
+    background-repeat: no-repeat;
+}
+#menu_Principal_Titulo{
+    font-family: 'Lora', serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    color:$bdblanco;
+    background: $bgfondo;
+    text-transform: uppercase;
+    position: sticky;
+    z-index: 5;
+    top: 0px;
+}
+#menu_Principal_Banner{
+    height: 190px;
+}
+nav{
+    width: 100%;
+    border-color:$bdblanco 2px solid;
+    a{
+        text-decoration: none;
+        color: $bdrojo;
+    }
+    ul{
+        margin:  0 auto;
+        padding: 0;
+        background: $bgfondo;
+        animation-name: un_efecto;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 10s;
+        animation-delay: 2s;
+    }
+    ul li{
+        list-style: none;
+        display: inline-block;
+        padding: 5px;
+        font-size: 0.8em;
+    }
+    ul li:hover{
+        background: $bdverde;
+        transform: scale(1.2);
+        transform: translate(20px);
+        transition: 2s,2s;
+    }
+    ul li a{
+        color: $bdblanco;
+        text-decoration: none;
+        font-weight: bold;
+        border-left: solid 1px;
+    }
+    .toggle{
+        width:100%;
+        padding: 10px 20px;
+        text-align: right;
+        box-sizing: border-box;
+        color: $bdblanco;
+        font-size: 30px;
+        display: none;
+    }
+    .iconos{
+        width: 20px;
+        height: 20px;
+        padding: 7px;
+    }
+}

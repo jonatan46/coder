@@ -1,0 +1,113 @@
+@import "coloresFuentes";
+
+@import "header";
+@import "grilla";
+@import "productos";
+@import "locales";
+@import "galeria";
+@import "footer";
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: $fontfamilybody;
+    background-color:$bfgrisfondo ;
+}
+.formulario_contacto{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+.contacto_campos{
+    display: inline;
+}
+.border {
+    border: 2px double rgb(131, 0, 0);
+ }
+
+h4{
+    font-style: italic;
+    font-size: 0.9em;
+}
+.tablas{
+    border:"0";
+    background-color: rgb(10, 3, 59);
+}
+.tabla{
+    border:"0";
+    background-color: rgb(255, 255, 255);
+}
+.multimp3, .multivideos{
+    text-align: center;
+}
+.titH2{
+    font-family: $fontserif;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.comentario{
+    display: inline-block;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    font-size: 1em;
+    text-align: justify;
+    font-style: italic;
+    font-weight: bold;
+    width: 88%;
+}
+
+
+@keyframes un_efecto {
+    0%{ background-color: #1d4372;}
+    20%{ background-color: #3062a0;}
+    30%{ background-color: #79a7df;}
+    40%{ background-color: #78af91;}
+    50%{ background-color: #28583e; }
+    60%{ background-color: #0c502b;}
+    80%{ background-color: #0c504d;}
+    100%{ background-color: #1d4372;}
+ }
+ 
+
+@media (max-width:800px){
+    nav .titulo{
+        font-size: 0.9em;
+    }
+    nav .toggle{
+        display: block;
+        width:15%;
+        padding: auto;
+    }
+    nav ul{
+        width: 100%;
+        display: none;
+    }
+    nav ul li{
+        padding-left: 15%;
+        text-align: justify;
+        display: block;
+        
+    }
+    nav .mobile{
+        display: block;
+    }
+    #grilla {
+        grid-template-areas:
+        "header header header"
+        "primera primera primera"
+        "segunda segunda segunda"
+        "aside aside aside"
+        "footer footer footer";
+    }
+    #completo{
+        display: none;
+    }
+}
+@media (min-width:1200px){
+    body{
+        max-width: 1300px;
+        margin: 0 auto; 
+    }
+}
