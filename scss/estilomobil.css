@@ -6,13 +6,14 @@
 }
 
 #menu_Principal_Titulo {
-  font-family: "Lora", serif;
+  font-family: 'Lora', serif;
   font-size: 1.4em;
   font-weight: bold;
   text-align: center;
   color: #ffffff;
   background: #1d4372;
   text-transform: uppercase;
+  position: -webkit-sticky;
   position: sticky;
   z-index: 5;
   top: 0px;
@@ -26,10 +27,12 @@ nav {
   width: 100%;
   border-color: #ffffff 2px solid;
 }
+
 nav a {
   text-decoration: none;
   color: #ff0000;
 }
+
 nav ul {
   margin: 0 auto;
   padding: 0;
@@ -45,33 +48,45 @@ nav ul {
   -webkit-animation-delay: 2s;
           animation-delay: 2s;
 }
+
 nav ul li {
   list-style: none;
   display: inline-block;
   padding: 5px;
   font-size: 0.8em;
 }
+
 nav ul li:hover {
   background: #63f382;
-  transform: scale(1.2);
-  transform: translate(20px);
-  transition: 2s, 2s;
+  padding-left: 15px;
+  padding-right: 100px;
+  margin-right: 20px;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform: translate(20px);
+          transform: translate(20px);
+  -webkit-transition: 2s,2s;
+  transition: 2s,2s;
 }
+
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
   border-left: solid 1px;
 }
+
 nav .toggle {
   width: 100%;
   padding: 10px 20px;
   text-align: right;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: #ffffff;
   font-size: 30px;
   display: none;
 }
+
 nav .iconos {
   width: 20px;
   height: 20px;
@@ -82,16 +97,22 @@ nav .iconos {
   width: 98%;
   max-width: 98%;
   margin: 3px auto;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, auto);
-  grid-template-areas: "header header header" "primera primera aside" "segunda segunda segunda" "footer footer footer";
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (auto)[4];
+      grid-template-rows: repeat(4, auto);
+      grid-template-areas: "header header header" "primera primera aside" "segunda segunda segunda" "footer footer footer";
   gap: 1px;
   justify-items: center;
 }
 
 #menu_principal {
   width: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: header;
   height: 250px;
   background: #1d4372;
@@ -100,6 +121,9 @@ nav .iconos {
 }
 
 #main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
   grid-area: primera;
 }
 
@@ -111,17 +135,26 @@ nav .iconos {
 }
 
 section#section {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: segunda;
   width: 100%;
 }
 
 aside#aside {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
   grid-area: aside;
   width: 100%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(blue), to(black));
   background-image: linear-gradient(white, blue, black);
 }
 
 footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
   grid-area: footer;
   width: 100%;
   background: #1d4372;
@@ -134,25 +167,37 @@ footer {
   background-color: #919090;
   padding: 1%;
 }
+
 .productos .productos_galeriaTitulo {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.4em;
   font-weight: bold;
   text-align: center;
   color: #ffffff;
 }
+
 .productos .productos_carrucelImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: space-around;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .localesUbic {
   background-color: #303030;
   padding: 1%;
 }
+
 .localesUbic .localesTitulos {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-size: 1.4em;
@@ -160,12 +205,21 @@ footer {
   text-align: center;
   color: #ffffff;
 }
+
 .localesUbic .localesMaps {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
+
 .localesUbic .localesMaps .local {
   width: 570px;
   height: 490px;
@@ -175,6 +229,7 @@ footer {
   font-weight: bold;
   border: #919090 double 4px;
 }
+
 .localesUbic .localesMaps .local:hover {
   border: #ffffff double 3px;
 }
@@ -183,11 +238,19 @@ footer {
   background-color: #303030;
   padding: 1%;
 }
+
 .galeria .galeriaImg {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 .galeriahijo {
@@ -195,7 +258,7 @@ footer {
 }
 
 .tituloGaleria {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 1.4em;
   font-weight: bold;
   text-align: center;
@@ -204,7 +267,7 @@ footer {
 }
 
 .footer_titulo {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 1em;
   font-weight: bold;
 }
@@ -262,9 +325,14 @@ h4 {
 
 .comentario {
   display: inline-block;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
   font-size: 1em;
   text-align: justify;
   font-style: italic;
@@ -325,43 +393,47 @@ h4 {
     background-color: #1d4372;
   }
 }
+
 @media (max-width: 800px) {
+  #menu_Principal_Titulo {
+    font-size: 1em;
+  }
+  #menu_Principal_Banner {
+    display: none;
+  }
+  #menu_principal {
+    height: 130px;
+    background-size: 130%;
+  }
   nav .titulo {
     font-size: 0.9em;
   }
-
   nav .toggle {
     display: block;
     width: 15%;
     padding: auto;
   }
-
   nav ul {
     width: 100%;
     display: none;
+    position: -webkit-sticky;
+    position: sticky;
   }
-
   nav ul li {
     padding-left: 15%;
     text-align: justify;
     display: block;
   }
-
   nav .mobile {
     display: block;
-  }
-
-  #grilla {
-    grid-template-areas: "header header header" "primera primera primera" "segunda segunda segunda" "aside aside aside" "footer footer footer";
-  }
-
-  #completo {
-    display: none;
+    z-index: 10;
   }
 }
+
 @media (min-width: 1200px) {
   body {
     max-width: 1300px;
     margin: 0 auto;
   }
-}/*# sourceMappingURL=estilomobil.css.map */
+}
+/*# sourceMappingURL=estilomobil.css.map */

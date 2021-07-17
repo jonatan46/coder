@@ -72,6 +72,16 @@ h4{
  
 
 @media (max-width:800px){
+    #menu_Principal_Titulo{
+        font-size: 1em;
+    }
+    #menu_Principal_Banner{
+        display: none;
+    }
+    #menu_principal{
+        height: 130px;  
+        background-size: 130%;
+    }
     nav .titulo{
         font-size: 0.9em;
     }
@@ -83,26 +93,16 @@ h4{
     nav ul{
         width: 100%;
         display: none;
+        position: sticky;
     }
     nav ul li{
         padding-left: 15%;
         text-align: justify;
         display: block;
-        
     }
     nav .mobile{
         display: block;
-    }
-    #grilla {
-        grid-template-areas:
-        "header header header"
-        "primera primera primera"
-        "segunda segunda segunda"
-        "aside aside aside"
-        "footer footer footer";
-    }
-    #completo{
-        display: none;
+        z-index: 10;
     }
 }
 @media (min-width:1200px){

@@ -44,6 +44,9 @@ nav{
     }
     ul li:hover{
         background: $bdverde;
+        padding-left: 15px;
+        padding-right: 100px;
+        margin-right: 20px;
         transform: scale(1.2);
         transform: translate(20px);
         transition: 2s,2s;
